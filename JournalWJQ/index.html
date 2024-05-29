@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyJournal.com</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+<div id="cont">
+  <div id="header"><h1>Journal:Create daily journals.</h1></div>
+
+
+  <div id="navbar">
+    <button class="btn btn-primary" onclick="changeSettings()" type="button">Change Settings:</button>
+    <span id="Settings">
+
+    <span class="settingsItems">
+    <label>Change Font:</label>
+    <select id="fonts">
+      <option value="'Madimi One', sans-serif">Madimi</option>
+      <option value="'Josefin Sans', sans-serif">Josefin</option>
+      <option value="Arial, sans-serif">Arial</option>
+      <option value="Courier New, monospace">Courier New</option>
+      <option value="Georgia, serif">Georgia</option>
+      <option value="Tahoma, sans-serif">Tahoma</option>
+      <option value="Times New Roman, serif">Times New Roman</option>
+      <option value="Verdana, sans-serif">Verdana</option>
+    </select>
+    </span>
+
+    <span class="settingsItems">
+    <label>Change Background Color:</label>
+    <select id="bColors">
+      <option value="white">white</option>
+      <option value="purple">purple</option>
+      <option value="red">red</option>
+      <option value="blue">blue</option>
+      <option value="green">green</option>
+      <option value="yellow">yellow</option>
+      <option value="pink">pink</option>
+      <option value="orange">orange</option>
+      <option value="black">black</option>
+      
+    </select>
+    </span>
+
+    <span class="settingsItems">
+    <label>Change text color:</label>
+    <select id="colors">
+      <option value="black">black</option>
+      <option value="purple">purple</option>
+      <option value="red">red</option>
+      <option value="blue">blue</option>
+      <option value="green">green</option>
+      <option value="yellow">yellow</option>
+      <option value="pink">pink</option>
+      <option value="orange">orange</option>
+      <option value="white">white</option>
+    </select>
+  </span>
+    <button class="btn btn-success" onclick="modifySettings()" type="button">Modify Settings</button>
+  </span>
+  </div>
+
+  <div id="section">
+    <h2>Main Menu:</h2>
+    <button onclick="createJournal()" class="btn btn-primary" type="button">Create New Journal</button>
+    <button onclick="showJournals()" class="btn btn-primary" type="button">Show Old Journals</button>
+  </div>
+</div>
+  
+  <script src="lib/jquery.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
